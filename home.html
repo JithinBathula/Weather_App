@@ -3,15 +3,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Weather App</title>
         <meta name="description" content="A simple weather app">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Weather App</h1>
-        <p>This is a simple weather app.</p>
-        <input>
+        <div id="weather">
+            <h1>Weather App</h1>
+            <p>This is a simple weather app.</p>
+            <input type="text" id="place" placeholder="Enter the city">
+            <button id="searchBtn" onclick="getWeather()">Search</button>
+            <img id="weather-icon">
+            <div id="temp-div"></div>
+            <div id="weather-div"></div>
+            <div id="hourly-forecast-div"></div>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
